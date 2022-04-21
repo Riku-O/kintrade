@@ -3,7 +3,7 @@ RUN apt-get update -qq && apt-get install -y postgresql-client
 WORKDIR /myapp
 
 # Node.jsをインストール
-RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - && apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && apt-get install -y nodejs
 
 # yarnパッケージ管理ツールをインストール
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
